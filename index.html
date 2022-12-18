@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>World generator</title>
+
+        <script src="main.js"></script>
+        <script src="board.js"></script>
+        <script src="generator.js"></script>
+
+        <script defer>
+            const existingTiles = {
+                A: Tile(
+
+                ),
+                B: Tile(
+
+                ),
+                C: Tile(
+
+                ),
+                D: Tile(
+                    
+                ),
+            }
+
+            const width = 20;
+            const height = 20;
+
+            const grid = document.getElementByID("tile_grid");
+            generateWorld(grid, width, height, existingTiles)
+        </script>
+    </head>
+    <body>
+        <div id="tile_grid"></div>
+    </body>
+</html>
