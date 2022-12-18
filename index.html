@@ -5,34 +5,23 @@
 
         <title>World generator</title>
 
+        <!--Load scripts from .js files-->
         <script src="main.js"></script>
         <script src="board.js"></script>
         <script src="generator.js"></script>
 
+        <!--Define board size and target grid element and call generateWorld()-->
         <script defer>
-            const existingTiles = {
-                A: Tile(
-
-                ),
-                B: Tile(
-
-                ),
-                C: Tile(
-
-                ),
-                D: Tile(
-                    
-                ),
-            }
-
             const width = 20;
             const height = 20;
 
             const grid = document.getElementByID("tile_grid");
-            generateWorld(grid, width, height, existingTiles)
+            
+            generateWorld(grid, width, height, existingTiles);
         </script>
     </head>
     <body>
+        <!--The image grid-->
         <div id="tile_grid"></div>
     </body>
 </html>
