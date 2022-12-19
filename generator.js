@@ -1,6 +1,6 @@
 
 
-function generate(board, existingTiles){
+function generate(board){
     for (let i = 0; i < board.height; i++) {
         for (let j = 0; j < board.width; j++) {
             const AllowedArray = board.getAllowedTiles(j,i);
