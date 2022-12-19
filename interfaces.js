@@ -31,4 +31,4 @@ class Board {
 
 // generator.js
 
-function generate(board, existingTiles)
+function generate(board)
