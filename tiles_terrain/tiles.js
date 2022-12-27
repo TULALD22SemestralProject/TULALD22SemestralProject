@@ -1,4 +1,4 @@
-const TILE_URL_TEMPLATE = (i) -> `tiles_terrain/${String(i).padStart(3, '0')}.jpg`;
+const TILE_URL_TEMPLATE = (i) => `tiles_terrain/${String(i).padStart(3, '0')}.jpg`;
 
 const TILE_EDGE_TYPES = [
     "water",
@@ -142,7 +142,7 @@ const existingTiles = getExistingTilesFromEdges(
             B: "beach",
             C: "beach_water",
             D: "beach_water"
-        }.
+        },
 
         // 16
         {
@@ -390,7 +390,7 @@ const existingTiles = getExistingTilesFromEdges(
             B: "grass",
             C: "grass",
             D: "water_grass"
-        }
+        },
 
         // 47
         {
