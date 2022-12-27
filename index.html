@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>World generator</title>
+
+        <!--Class and function definitions-->
+        <script src="main.js"></script>
+        <script src="board.js"></script>
+        <script src="generator.js"></script>
+        <script src="tiles_types.js"></script>
+
+        <!--Define existingTiles for tiles_terrain-->
+        <script src="tiles_terrain/tiles.js"></script>
+
+        <!--Define board size and target grid element and call generateWorld()-->
+        <script defer>
+            const width = 20;
+            const height = 20;
+
+            const grid = document.getElementById("tile_grid");
+            
+            generateWorld(grid, width, height, existingTiles);
+        </script>
+    </head>
+    <body>
+        <!--The image grid-->
+        <div id="tile_grid"></div>
+    </body>
+</html>
