@@ -1,5 +1,6 @@
 function getExistingTilesFromEdges(urlTemplate, edgeTypes, tileEdges) {        
     const SIDES = ['A','B','C','D'];
+    const OPPOSITE_SIDES = {A: 'C', B: 'D', C: 'A', D: 'B'}
     
     const edgeTiles = {};
     SIDES.forEach(side => {
@@ -14,7 +15,7 @@ function getExistingTilesFromEdges(urlTemplate, edgeTypes, tileEdges) {
     for (let i=0; i<tileEdges.length, i++) {
         allowedTileTypes = {};
         SIDES.forEach(side => {
-            allowedTileTypes[side] = edgeTiles[side][tileEdges[side][type]];
+            allowedTileTypes[side] = edgeTiles[OPPOSITE_SIDES[side]][tileEdges[i][side]];
             allowedTileTypes[side].push(i);
         });
 
