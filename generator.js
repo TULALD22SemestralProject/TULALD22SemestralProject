@@ -14,7 +14,7 @@ function generate(board, existingTileTypes){
             //picks random tile from allowed
             let randomTile = getRandomTile(AllowedArray);
             //places random tile on the board
-            board.addTile(j,i, existingTileTypes[randomTile]);
+            board.addTile(j,i, randomTile);
         }        
     }
 }
