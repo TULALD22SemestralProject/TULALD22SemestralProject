@@ -6,6 +6,7 @@ function generate(board, existingTileTypes){
             const AllowedArray = board.getAllowedTiles(j,i);
             //reset if wrongly generated
             if(AllowedArray.length = 0){
+                board.clear();
                 i = 0;
                 j = 0;
                 break;
