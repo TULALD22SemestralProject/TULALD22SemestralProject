@@ -7,7 +7,7 @@ function generate(board, existingTileTypes){
             //reset if wrongly generated
             if(AllowedArray.length = 0){
                 board.clear();
-                i = 0;
+                i = -1;
                 j = 0;
                 break;
             }
