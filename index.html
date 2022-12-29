@@ -6,7 +6,6 @@
         <title>World generator</title>
 
         <!--Class and function definitions-->
-        <script src="main.js"></script>
         <script src="board.js"></script>
         <script src="tiletype.js"></script>
         <script src="generator.js"></script>
@@ -16,13 +15,15 @@
         <script src="tiles_terrain/tiles.js"></script>
 
         <!--Define board size and target grid element and call generateWorld()-->
-        <script defer>
+        <script>
             const width = 20;
             const height = 20;
-
-            const grid = document.getElementById("tile_grid");
             
-            generateWorld(grid, width, height, existingTiles);
+            document.onload = function() {
+                const grid = document.getElementById("tile_grid");
+            
+                generateWorld(grid, width, height, existingTiles);
+            }
         </script>
     </head>
     <body>
