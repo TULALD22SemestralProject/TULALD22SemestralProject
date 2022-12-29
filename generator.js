@@ -5,7 +5,7 @@ function generate(board, existingTileTypes){
         for (let j = 0; j < board.width; j++) {
             const AllowedArray = board.getAllowedTiles(j,i);
             //reset if wrongly generated
-            if(AllowedArray.length = 0){
+            if(AllowedArray.length == 0){
                 board.clear();
                 i = -1;
                 j = 0;

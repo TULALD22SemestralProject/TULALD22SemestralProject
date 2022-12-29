@@ -24,10 +24,10 @@ class Board{
     let allowedTiles = [];
     
     for(let i = 0; i < existingTiles.length;i++){
-     if(x<=0 || this.tiles[x-1][y]==null || searchArray(i,this.tiles[x-1][y].getAllowedTileTypes().A)){
-        if(y<=0 || this.tiles[x][y-1]==null || searchArray(i,this.tiles[x][y-1].getAllowedTileTypes().D)){
-            if(x>=this.width-1 || this.tiles[x+1][y]==null || searchArray(i,this.tiles[x+1][y].getAllowedTileTypes().C)){
-                if(y>=this.height-1 || this.tiles[x][y+1]==null || searchArray(i,this.tiles[x+1][y].getAllowedTileTypes().B)){
+     if(x<=0 || this.tiles[x-1][y]==null || this.searchArray(i,this.tiles[x-1][y].getAllowedTileTypes().A)){
+        if(y<=0 || this.tiles[x][y-1]==null || this.searchArray(i,this.tiles[x][y-1].getAllowedTileTypes().D)){
+            if(x>=this.width-1 || this.tiles[x+1][y]==null || this.searchArray(i,this.tiles[x+1][y].getAllowedTileTypes().C)){
+                if(y>=this.height-1 || this.tiles[x][y+1]==null || this.searchArray(i,this.tiles[x+1][y].getAllowedTileTypes().B)){
                     allowedTiles.push(i);
                 }
             }
@@ -46,7 +46,7 @@ class Board{
     }
     
     searchArray(a,arr){
-        bol = false;
+        let bol = false;
         for(let i=0;i<arr.length;i++){
             if(a == arr[i]){
                 return true;
