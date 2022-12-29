@@ -24,9 +24,9 @@ class Board{
     let allowedTiles = [];
     
     for(let i = 0; i < existingTiles.length;i++){
-     if(x<=0 || this.tiles[x-1][y]==null || this.searchArray(i,this.tiles[x-1][y].getAllowedTileTypes().A)){
+     if(x<=0 || this.tiles[x-1][y]==null || this.searchArray(i,this.tiles[x-1][y].getAllowedTileTypes().C)){
         if(y<=0 || this.tiles[x][y-1]==null || this.searchArray(i,this.tiles[x][y-1].getAllowedTileTypes().D)){
-            if(x>=this.width-1 || this.tiles[x+1][y]==null || this.searchArray(i,this.tiles[x+1][y].getAllowedTileTypes().C)){
+            if(x>=this.width-1 || this.tiles[x+1][y]==null || this.searchArray(i,this.tiles[x+1][y].getAllowedTileTypes().A)){
                 if(y>=this.height-1 || this.tiles[x][y+1]==null || this.searchArray(i,this.tiles[x+1][y].getAllowedTileTypes().B)){
                     allowedTiles.push(i);
                 }
