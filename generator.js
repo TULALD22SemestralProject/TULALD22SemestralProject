@@ -6,14 +6,15 @@ function generate(board, existingTileTypes){
             const AllowedArray = board.getAllowedTiles(j,i);
             //reset if wrongly generated
             if(AllowedArray.length = 0){
-                i = 0;
+                board.clear();
+                i = -1;
                 j = 0;
                 break;
             }
             //picks random tile from allowed
             let randomTile = getRandomTile(AllowedArray);
             //places random tile on the board
-            board.addTile(j,i, existingTileTypes[randomTile]);
+            board.addTile(j,i, randomTile);
         }        
     }
 }
