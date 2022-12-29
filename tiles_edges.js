@@ -35,4 +35,6 @@ function getExistingTilesFromEdges(urlTemplate, edgeTypes, tileEdges) {
             allowedTileTypes
         );
     }
+
+    return existingTiles;
 }
