@@ -188,7 +188,7 @@ const existingTiles = getExistingTilesFromEdges(
         {
             A: "beach",
             B: "beach",
-            C: "grass_beach",
+            C: "beach_grass",
             D: "beach_grass"
         },
 
