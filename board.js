@@ -13,21 +13,21 @@ class Board{
     }
     
     addTile(x,y,type){
-        this.tiles[x][y]=existingTiles[type];
+        this.tiles[x][y]=this.existingTiles[type];
     }
     
     getURL(x,y) {
-        return tiles[x][y].getURL();
+        return this.tiles[x][y].getURL();
     }
     
     getAllowedTiles(x,y){
-    allowedTiles = [];
+    let allowedTiles = [];
     
     for(let i = 0; i < existingTiles.length;i++){
-     if(x<=0 || tiles[x-1][y]==null || searchArray(i,tiles[x-1][y].getAllowedTileTypes().A)){
-        if(y<=0 ||tiles[x][y-1]==null || searchArray(i,tiles[x][y-1].getAllowedTileTypes().D)){
-            if(x>=width-1 || tiles[x+1][y]==null || searchArray(i,tiles[x+1][y].getAllowedTileTypes().C)){
-                if(y>=height-1 || tiles[x][y+1]==null || searchArray(i,tiles[x+1][y].getAllowedTileTypes().B)){
+     if(x<=0 || this.tiles[x-1][y]==null || searchArray(i,this.tiles[x-1][y].getAllowedTileTypes().A)){
+        if(y<=0 || this.tiles[x][y-1]==null || searchArray(i,this.tiles[x][y-1].getAllowedTileTypes().D)){
+            if(x>=this.width-1 || this.tiles[x+1][y]==null || searchArray(i,this.tiles[x+1][y].getAllowedTileTypes().C)){
+                if(y>=this.height-1 || this.tiles[x][y+1]==null || searchArray(i,this.tiles[x+1][y].getAllowedTileTypes().B)){
                     allowedTiles.push(i);
                 }
             }
@@ -40,7 +40,7 @@ class Board{
     clear(){
         for(let a = 0; a<width;a++){
             for(let b = 0; b<height;b++){
-                tiles[a][b]=null;
+                this.tiles[a][b]=null;
             }
         }
     }
