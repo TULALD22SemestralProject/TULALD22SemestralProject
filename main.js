@@ -10,7 +10,7 @@ function fillGrid(grid, board) {
     grid.innerHTML = ""; // clear the grid
 
     grid.style.display = "grid";
-    grid.style.gridTemplateColumns = `repeat(${board.width}, auto)`;
+    grid.style.gridTemplateColumns = `repeat(${board.width}, min-content)`;
     
     let image;
     for (let y=0; y < board.height; y++) {
