@@ -1,4 +1,4 @@
-const TILE_URL_TEMPLATE = (i) => `tiles_terrain/${String(i).padStart(3, '0')}.jpg`;
+const TILE_URL_TEMPLATE = (i) => `tiles_terrain/${String(i).padStart(3, '0')}.png`;
 
 const TILE_EDGE_TYPES = [
     "water",
