@@ -20,7 +20,7 @@
             const width = 20;
             const height = 20;
             
-            function bodyOnload() {
+            window.onload = function() {
                 const grid = document.getElementById("tile_grid");
             
                 generateWorld(grid, width, height, existingTiles);
