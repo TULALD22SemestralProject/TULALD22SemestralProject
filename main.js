@@ -15,7 +15,7 @@ function fillGrid(grid, board) {
     let image;
     for (let y=0; y < board.height; y++) {
         for (let x=0; x < board.width; x++) {
-            image = document.createElement("image");
+            image = document.createElement("img");
             image.src = board.getURL(x,y);
             grid.appendChild(image);
         }
