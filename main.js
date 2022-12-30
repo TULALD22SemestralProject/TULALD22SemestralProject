@@ -1,6 +1,6 @@
 // Creates a new Board and calls generate() to fill it with tiles and then calls fillGrid that fills a HTML image grid acording to data from the Board  
 function generateWorld(grid, width, height, existingTiles) {
-    let board = new Board(width, height);
+    let board = new Board(width, height, existingTiles);
     generate(board, existingTiles);
     fillGrid(grid, board);
 }
