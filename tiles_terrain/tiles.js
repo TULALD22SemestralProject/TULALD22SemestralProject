@@ -398,6 +398,198 @@ const existingTiles = getExistingTilesFromEdges(
             B: "water_grass",
             C: "grass",
             D: "grass"
+        },
+
+        // 48
+        {
+            A: "grass",
+            B: "grass_water",
+            C: "water_beach",
+            D: "grass_beach"
+        },
+
+        // 49
+        {
+            A: "water_beach",
+            B: "water_grass",
+            C: "grass",
+            D: "beach_grass"
+        },
+
+        // 50
+        {
+            A: "grass_beach",
+            B: "grass",
+            C: "grass_water",
+            D: "beach_water"
+        },
+
+        // 51
+        {
+            A: "grass_water",
+            B: "grass",
+            C: "grass_beach",
+            D: "water_beach"
+        },
+
+        // 52
+        {
+            A: "beach_water",
+            B: "beach_grass",
+            C: "grass",
+            D: "water_grassr"
+        },
+
+        // 53
+        {
+            A: "grass",
+            B: "grass_beach",
+            C: "beach_water",
+            D: "grass_water"
+        },
+
+        // 54
+        {
+            A: "water_grass",
+            B: "water_beach",
+            C: "beach_grass",
+            D: "grass"
+        },
+
+        // 55
+        {
+            A: "beach_grass",
+            B: "beach_water",
+            C: "water_grass",
+            D: "grass"
+        },
+
+        // 56
+        {
+            A: "grass_beach",
+            B: "grass_water",
+            C: "water_beach",
+            D: "beach"
+        },
+        
+        // 57
+        {
+            A: "water_beach",
+            B: "water_grass",
+            C: "grass_beach",
+            D: "beach"
+        },
+
+        // 58
+        {
+            A: "beach",
+            B: "beach_grass",
+            C: "grass_water",
+            D: "beach_water"
+        },
+
+        // 59
+        {
+            A: "grass_water",
+            B: "grass_beach",
+            C: "beach",
+            D: "water_beach"
+        },
+
+        // 60
+        {
+            A: "beach_water",
+            B: "beach",
+            C: "beach_grass",
+            D: "water_grass"
+        },
+
+        // 61
+        {
+            A: "beach_grass",
+            B: "beach",
+            C: "beach_water",
+            D: "grass_water"
+        },
+
+        // 62
+        {
+            A: "water_grass",
+            B: "water_beach",
+            C: "beach",
+            D: "grass_beach"
+        },
+
+        // 63
+        {
+            A: "beach",
+            B: "beach_water",
+            C: "water_grass",
+            D: "beach_grass"
+        },
+
+        // 64
+        {
+            A: "grass_beach",
+            B: "grass_water",
+            C: "water",
+            D: "beach_water"
+        },
+
+        // 65
+        {
+            A: "water",
+            B: "water_grass",
+            C: "grass_beach",
+            D: "water_beach"
+        },
+
+        // 66
+        {
+            A: "beach_water",
+            B: "beach_grass",
+            C: "grass_water",
+            D: "water"
+        },
+
+        // 67
+        {
+            A: "grass_water",
+            B: "grass_beach",
+            C: "beach_water",
+            D: "water"
+        },
+
+        // 68
+        {
+            A: "water",
+            B: "beach_grass",
+            C: "grass_beach",
+            D: "water_grass"
+        },
+
+        // 69
+        {
+            A: "beach_grass",
+            B: "beach_water",
+            C: "water",
+            D: "grass_water"
+        },
+
+        // 70
+        {
+            A: "water_grass",
+            B: "water",
+            C: "water_beachr",
+            D: "grass_beach"
+        },
+
+        // 71
+        {
+            A: "water_beach",
+            B: "water",
+            C: "water_grass",
+            D: "beach_grass"
         }
     ]
 );
